@@ -31,8 +31,9 @@
 
 package com.raywenderlich.android.redditclone
 
-import android.arch.paging.PagedList
+
 import android.util.Log
+import androidx.paging.PagedList
 import com.raywenderlich.android.redditclone.database.RedditDb
 import com.raywenderlich.android.redditclone.networking.RedditApiResponse
 import com.raywenderlich.android.redditclone.networking.RedditPost

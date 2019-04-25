@@ -30,9 +30,10 @@
 
 package com.raywenderlich.android.redditclone
 
-import android.arch.paging.PagedListAdapter
+
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.paging.PagedListAdapter
 import com.raywenderlich.android.redditclone.networking.RedditPost
 import kotlinx.android.synthetic.main.adapter_row.view.*
 

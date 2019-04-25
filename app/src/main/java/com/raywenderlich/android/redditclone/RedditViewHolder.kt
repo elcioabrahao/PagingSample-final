@@ -30,7 +30,8 @@
 
 package com.raywenderlich.android.redditclone
 
-import android.support.v7.widget.RecyclerView
+
 import android.view.View
+import androidx.recyclerview.widget.RecyclerView
 
 class RedditViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)

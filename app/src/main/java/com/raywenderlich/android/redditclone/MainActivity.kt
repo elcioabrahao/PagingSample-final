@@ -30,12 +30,14 @@
 
 package com.raywenderlich.android.redditclone
 
-import android.arch.lifecycle.Observer
-import android.arch.paging.LivePagedListBuilder
-import android.arch.paging.PagedList
+
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
-import android.support.v7.widget.LinearLayoutManager
+import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.Observer
+import androidx.paging.LivePagedListBuilder
+import androidx.paging.PagedList
+import androidx.recyclerview.widget.LinearLayoutManager
+
 import com.raywenderlich.android.redditclone.database.RedditDb
 import com.raywenderlich.android.redditclone.networking.RedditPost
 import kotlinx.android.synthetic.main.activity_main.*
@@ -70,7 +72,7 @@ class MainActivity : AppCompatActivity() {
   }
 
   private fun initializedPagedListBuilder(config: PagedList.Config):
-      LivePagedListBuilder<Int, RedditPost> {
+          LivePagedListBuilder<Int, RedditPost> {
 
     val database = RedditDb.create(this)
     val livePageListBuilder = LivePagedListBuilder<Int, RedditPost>(

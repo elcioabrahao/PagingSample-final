@@ -30,7 +30,13 @@
 
 package com.raywenderlich.android.redditclone.utils;
 
-import android.support.annotation.*;
+
+
+import androidx.annotation.AnyThread;
+import androidx.annotation.GuardedBy;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.annotation.VisibleForTesting;
 
 import java.util.Arrays;
 import java.util.concurrent.CopyOnWriteArrayList;
@@ -213,20 +219,20 @@ public class PagingRequestHelper {
    */
   public enum RequestType {
     /**
-     * Corresponds to an initial request made to a {@link DataSource} or the empty state for
-     * a {@link android.arch.paging.PagedList.BoundaryCallback BoundaryCallback}.
+     * Corresponds to an initial request made to a {@linka DataSource} or the empty state for
+     * a {@linka android.arch.paging.PagedList.BoundaryCallback BoundaryCallback}.
      */
     INITIAL,
     /**
-     * Corresponds to the {@code loadBefore} calls in {@link DataSource} or
+     * Corresponds to the {@code loadBefore} calls in {@linka DataSource} or
      * {@code onItemAtFrontLoaded} in
-     * {@link android.arch.paging.PagedList.BoundaryCallback BoundaryCallback}.
+     * {@linka android.arch.paging.PagedList.BoundaryCallback BoundaryCallback}.
      */
     BEFORE,
     /**
-     * Corresponds to the {@code loadAfter} calls in {@link DataSource} or
+     * Corresponds to the {@code loadAfter} calls in {@linka DataSource} or
      * {@code onItemAtEndLoaded} in
-     * {@link android.arch.paging.PagedList.BoundaryCallback BoundaryCallback}.
+     * {@linka android.arch.paging.PagedList.BoundaryCallback BoundaryCallback}.
      */
     AFTER
   }

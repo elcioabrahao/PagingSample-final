@@ -30,8 +30,9 @@
 
 package com.raywenderlich.android.redditclone
 
-import android.arch.paging.PageKeyedDataSource
+
 import android.util.Log
+import androidx.paging.PageKeyedDataSource
 import com.raywenderlich.android.redditclone.networking.RedditApiResponse
 import com.raywenderlich.android.redditclone.networking.RedditPost
 import com.raywenderlich.android.redditclone.networking.RedditService
